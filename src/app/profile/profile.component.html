@@ -1,0 +1,7 @@
+<p>profile works!</p>
+
+<div *ngFor="let item of data;index">{{ item.body }}</div>
+
+<label for="name">Title: </label>
+<input id="name" type="text" [formControl]="titleFC">
+<button (click)="retrievePost()" >Get Posts</button>
